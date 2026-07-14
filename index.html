@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presensi Barcode</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://unpkg.com/html5-qrcode"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+</head>
+<body>
+
+<h1>Presensi Kelas</h1>
+
+<div id="reader"></div>
+
+<h3>Data Presensi</h3>
+
+<table id="table">
+<thead>
+<tr>
+<th>No</th>
+<th>NIS</th>
+<th>Nama</th>
+<th>Status</th>
+<th>Jam</th>
+</tr>
+</thead>
+
+<tbody></tbody>
+
+</table>
+
+<br>
+
+<button onclick="downloadExcel()">Download Excel</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+<button onclick="logout()">
+Logout
+</button>
+
+<button onclick="resetPresensi()">
+Reset Presensi
+</button>
