@@ -64,6 +64,25 @@ tbody.innerHTML+=`
 
 tampilkan();
 
+function getTanggalHari(){
+
+    const hari = [
+        "Minggu",
+        "Senin",
+        "Selasa",
+        "Rabu",
+        "Kamis",
+        "Jumat",
+        "Sabtu"
+    ];
+
+    const sekarang = new Date();
+
+    return {
+        hari: hari[sekarang.getDay()],
+        tanggal: sekarang.toLocaleDateString("id-ID")
+    };
+
 function suksesScan(decodedText){
 
 let siswaCari=siswa.find(x=>x.nis==decodedText);
