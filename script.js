@@ -82,6 +82,7 @@ function getTanggalHari(){
         hari: hari[sekarang.getDay()],
         tanggal: sekarang.toLocaleDateString("id-ID")
     };
+}
 
 function suksesScan(decodedText){
 
