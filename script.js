@@ -32,7 +32,7 @@ siswa.forEach((s,index)=>{
 
 let data=presensi.find(x=>x.nis==s.nis);
 
-let status="Belum";
+let status="Tidak Hadir";
 let jam="-";
 
 if(data){
