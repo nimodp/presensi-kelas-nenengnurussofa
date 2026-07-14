@@ -5,16 +5,18 @@ window.location="login.html";
 }
 const siswa = [
 
-{nis:"1001", nama:"Andi"},
-{nis:"1002", nama:"Budi"},
-{nis:"1003", nama:"Citra"},
-{nis:"1004", nama:"Doni"},
-{nis:"1005", nama:"Eka"},
-{nis:"1006", nama:"Farhan"},
-{nis:"1007", nama:"Gina"},
-{nis:"1008", nama:"Hadi"},
-{nis:"1009", nama:"Indah"},
-{nis:"1010", nama:"Joko"}
+{nis:"1001", nama:"Arjuna Aditya"},
+{nis:"1002", nama:"Bilal Busyairi"},
+{nis:"1003", nama:"Cantika Akleema"},
+{nis:"1004", nama:"Devano Syafiq Ahmad"},
+{nis:"1005", nama:"Fairuz Attar"},
+{nis:"1006", nama:"Farel Kurniawan"},
+{nis:"1007", nama:"Muhammad Aidan"},
+{nis:"1008", nama:"Muhammad Uwais Al-Qorni"},
+{nis:"1009", nama:"Naomi Putri Tama"},
+{nis:"1010", nama:"Okha Suharesz"},
+{nis:"1011", nama:"Raja Syamil Elwafie"},
+{nis:"1012", nama:"Sultan Muhammad Alfatih"}
 
 ];
 
