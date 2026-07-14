@@ -84,6 +84,8 @@ function getTanggalHari(){
     };
 }
 
+tampilkan();
+
 function suksesScan(decodedText){
 
 let siswaCari=siswa.find(x=>x.nis==decodedText);
