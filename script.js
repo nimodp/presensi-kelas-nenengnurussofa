@@ -60,6 +60,20 @@ tbody.innerHTML+=`
 
 <td>${jam}</td>
 
+<td>
+
+<select onchange="ubahKeterangan('${s.nis}', this.value)">
+
+<option value="" ${!data?.keterangan ? "selected" : ""}>--Pilih--</option>
+
+<option value="Sakit" ${data?.keterangan=="Sakit"?"selected":""}>Sakit</option>
+
+<option value="Izin" ${data?.keterangan=="Izin"?"selected":""}>Izin</option>
+
+</select>
+
+</td>
+
 </tr>
 
 `;
@@ -128,7 +142,9 @@ presensi.push({
 
     tanggal: info.tanggal,
 
-    jam:waktu
+    jam:waktu,
+
+    keterangan:""
 
 });
 
@@ -168,13 +184,15 @@ data.push({
 
     Tanggal: hadir ? hadir.tanggal : "-",
 
-    Status: hadir ? "Hadir" : "Belum",
+    Status: hadir ? "Hadir" : "Tidak Hadir",
 
-    Jam: hadir ? hadir.jam : "-"
+    Jam: hadir ? hadir.jam : "-",
+
+    Keterangan: hadir ? (hadir.keterangan || "") : ""
 
 });
 
-});
+})
 
 let wb=XLSX.utils.book_new();
 
@@ -201,6 +219,22 @@ function resetPresensi(){
         presensi = [];
 
         localStorage.removeItem("presensi");
+
+        tampilkan();
+
+    }
+
+}
+
+function ubahKeterangan(nis, nilai){
+
+    let data = presensi.find(x => x.nis == nis);
+
+    if(data){
+
+        data.keterangan = nilai;
+
+        localStorage.setItem("presensi", JSON.stringify(presensi));
 
         tampilkan();
 
