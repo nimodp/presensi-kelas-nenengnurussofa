@@ -50,6 +50,10 @@ tbody.innerHTML+=`
 
 <td>${s.nama}</td>
 
+<td>${data ? data.hari : "-"}</td>
+
+<td>${data ? data.tanggal : "-"}</td>
+
 <td>${status}</td>
 
 <td>${jam}</td>
@@ -110,13 +114,19 @@ return;
 
 let waktu=new Date().toLocaleTimeString();
 
+const info = getTanggalHari();
+
 presensi.push({
 
-nis:siswaCari.nis,
+    nis:siswaCari.nis,
 
-nama:siswaCari.nama,
+    nama:siswaCari.nama,
 
-jam:waktu
+    hari: info.hari,
+
+    tanggal: info.tanggal,
+
+    jam:waktu
 
 });
 
@@ -146,15 +156,19 @@ let hadir=presensi.find(x=>x.nis==s.nis);
 
 data.push({
 
-No:index+1,
+    No:index+1,
 
-NIS:s.nis,
+    NIS:s.nis,
 
-Nama:s.nama,
+    Nama:s.nama,
 
-Status:hadir?"Hadir":"Belum",
+    Hari: hadir ? hadir.hari : "-",
 
-Jam:hadir?hadir.jam:"-"
+    Tanggal: hadir ? hadir.tanggal : "-",
+
+    Status: hadir ? "Hadir" : "Belum",
+
+    Jam: hadir ? hadir.jam : "-"
 
 });
 
