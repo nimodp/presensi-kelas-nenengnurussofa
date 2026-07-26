@@ -5,18 +5,18 @@ window.location="login.html";
 }
 const siswa = [
 
-{nis:"Displaybarcode” 1001”qr", nama:"Arjuna Aditya"},
-{nis:"Displaybarcode” 1002”qr", nama:"Bilal Busyairi"},
-{nis:"Displaybarcode” 1003”qr", nama:"Cantika Akleema"},
-{nis:"Displaybarcode” 1004”qr", nama:"Devano Syafiq Ahmad"},
-{nis:"Displaybarcode” 1005”qr", nama:"Fairuz Attar"},
-{nis:"Displaybarcode” 1006”qr", nama:"Farel Kurniawan"},
-{nis:"Displaybarcode” 1007”qr", nama:"Muhammad Aidan"},
-{nis:"Displaybarcode” 1008”qr", nama:"Muhammad Uwais Al-Qorni"},
-{nis:"Displaybarcode” 1009”qr", nama:"Naomi Putri Tama"},
-{nis:"Displaybarcode” 1010”qr", nama:"Okha Suharesz"},
-{nis:"Displaybarcode” 1011”qr", nama:"Raja Syamil Elwafie"},
-{nis:"Displaybarcode” 1012”qr", nama:"Sultan Muhammad Alfatih"}
+{nis:"1001", nama:"Arjuna Aditya"},
+{nis:"1002", nama:"Bilal Busyairi"},
+{nis:"1003", nama:"Cantika Akleema"},
+{nis:"1004", nama:"Devano Syafiq Ahmad"},
+{nis:"1005", nama:"Fairuz Attar"},
+{nis:"1006", nama:"Farel Kurniawan"},
+{nis:"1007", nama:"Muhammad Aidan"},
+{nis:"1008", nama:"Muhammad Uwais Al-Qorni"},
+{nis:"1009", nama:"Naomi Putri Tama"},
+{nis:"1010", nama:"Okha Suharesz"},
+{nis:"1011", nama:"Raja Syamil Elwafie"},
+{nis:"1012", nama:"Sultan Muhammad Alfatih"}
 
 ];
 
